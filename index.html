@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Vuejs</title>
+</head>
+<body>
+    <div id="uja-app">
+        <h1>Vue App</h1>
+        <p> Welcome {{ 'Mr.'+name }}</p>
+    </div>
+    <script src="js/vue.js"></script>
+    <script>
+        var vm=new Vue({
+            el:'#uja-app',
+            data:{
+                name:'Ayoub',
+                age:25,
+                akills:['JAVA','MICROSERVICES','SPRINGBOOT']
+            }
+        }) 
+    </script>
+</body>
+</html>
